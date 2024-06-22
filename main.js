@@ -22,9 +22,8 @@ subBtn.addEventListener("click", function () {
     siteName: nameInp.value.toLowerCase(),
     siteUrl: siteUrl.value.toLowerCase(),
   };
-  let regex =
-    /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.(com|net|org|eg){1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/i;
-  let regexFlag = false;
+
+  let regexFlag = true;
 
   if (regex.test(siteData.siteUrl)) {
     regexFlag = true;
